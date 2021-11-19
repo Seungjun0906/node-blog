@@ -1,0 +1,56 @@
+<div class="from-group">
+  <label for="title">제목</label>
+  <input
+    value="<%= article.title %>"
+    class="form-control"
+    type="text"
+    name="title"
+    id="title"
+    required
+  />
+</div>
+
+<div class="from-group">
+  <label for="content">내용</label>
+  <textarea
+    class="form-control"
+    name="content"
+    id="content"
+    cols="30"
+    rows="10"
+    required
+  >
+<%= article.content %></textarea
+  >
+</div>
+
+<div class="form-container">
+  <div class="from-group author">
+    <label for="author">작성자</label>
+    <input
+      type="text"
+      class="form-control"
+      name="author"
+      id="author"
+      value="<%= article.author %>"
+      required
+    />
+  </div>
+
+  <div class="from-group">
+    <label for="password">비밀번호</label>
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      id="password"
+      value="<%= article.password %>"
+      required
+    />
+  </div>
+</div>
+
+<a href="/" class="btn btn-secondary mt-3"> 취소 </a>
+
+<button type="submit" class="btn btn-primary mt-3">글쓰기</button>
+
