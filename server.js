@@ -9,14 +9,16 @@ const articleRouter = require("./routes/article.route");
 const app = express();
 const PORT = process.env.PORT || 80;
 
-// mongoose.connect("mongodb://localhost/blog", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
+mongoose.connect("mongodb://localhost/blog", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
-mongoose.connect(
-  "mongodb://jun:duddms12@13.125.241.50:27017/blog?authSource=admin&authMechanism=SCRAM-SHA-1"
-);
+// mongoose
+//   .connect
+
+//   // "mongodb://username:password@13.125.241.50:27017/blog?authSource=admin&authMechanism=SCRAM-SHA-1"
+//   ();
 
 app.set("view engine", "ejs");
 
